@@ -63,7 +63,7 @@
 #define PT_SLSH S(PT_7)    // /
 #define PT_LPRN S(PT_8)    // (
 #define PT_RPRN S(PT_9)    // )
-#define PT_EQL  S(PT_0)    // =
+#define PT_EQL  S(PT_0)    // =:
 #define PT_QUES S(PT_QUOT) // ?
 #define PT_RDAQ S(PT_LDAQ) // »
 #define PT_ASTR S(PT_PLUS) // *
