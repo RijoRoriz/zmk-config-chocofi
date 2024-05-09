@@ -1,86 +1,26 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-
-#define PT_BSLS GRV  // (backslash)
-#define PT_1    N1    // 1
-#define PT_2    N2    // 2
-#define PT_3    N3    // 3
-#define PT_4    N4    // 4
-#define PT_5    N5    // 5
-#define PT_6    N6    // 6
-#define PT_7    N7    // 7
-#define PT_8    N8    // 8
-#define PT_9    N9    // 9
-#define PT_0    N0    // 0
-#define PT_QUOT MINUS // '
-#define PT_LDAQ EQUAL  // «
-#define PT_Q    Q    // Q
-#define PT_W    W    // W
-#define PT_E    E    // E
-#define PT_R    R    // R
-#define PT_T    T    // T
-#define PT_Y    Y    // Y
-#define PT_U    U    // U
-#define PT_I    I    // I
-#define PT_O    O    // O
-#define PT_P    P    // P
-#define PT_PLUS LBRC // +
-#define PT_ACUT RBRC // ´ (dead)
-#define PT_A    A    // A
-#define PT_S    S    // S
-#define PT_D    D    // D
-#define PT_F    F    // F
-#define PT_G    G    // G
-#define PT_H    H    // H
-#define PT_J    J    // J
-#define PT_K    K    // K
-#define PT_L    L    // L
-#define PT_CCED SEMI // Ç
-#define PT_MORD SQT // º
-#define PT_TILD NUHS // ~ (dead)
-#define PT_LABK NUBS // <
-#define PT_Z    Z    // Z
-#define PT_X    X    // X
-#define PT_C    C    // C
-#define PT_V    V    // V
-#define PT_B    B    // B
-#define PT_N    N    // N
-#define PT_M    M    // M
-#define PT_COMM COMMA // ,
-#define PT_DOT  DOT  // .
-#define PT_MINS SLASH // -
-#define PT_PIPE S(PT_BSLS) // |
-#define PT_EXLM S(PT_1)    // !
-#define PT_DQUO S(PT_2)    // "
-#define PT_HASH S(PT_3)    // #
-#define PT_DLR  S(PT_4)    // $
-#define PT_PERC S(PT_5)    // %
-#define PT_AMPR S(PT_6)    // &
-#define PT_SLSH S(PT_7)    // /
-#define PT_LPRN S(PT_8)    // (
-#define PT_RPRN S(PT_9)    // )
-#define PT_EQL  S(PT_0)    // =:
-#define PT_QUES S(PT_QUOT) // ?
-#define PT_RDAQ S(PT_LDAQ) // »
-#define PT_ASTR S(PT_PLUS) // *
-#define PT_GRV  S(PT_ACUT) // ` (dead)
-#define PT_FORD S(PT_MORD) // ª
-#define PT_CIRC S(PT_TILD) // ^ (dead)
-#define PT_RABK S(PT_LABK) // >
-#define PT_SCLN S(PT_COMM) // ;
-#define PT_COLN S(PT_DOT)  // :
-#define PT_UNDS S(PT_MINS) // _
-#define PT_AT   ALGR(PT_2)    // @
-#define PT_PND  ALGR(PT_3)    // £
-#define PT_SECT ALGR(PT_4)    // §
-#define PT_LCBR ALGR(PT_7)    // {
-#define PT_LBRC ALGR(PT_8)    // [
-#define PT_RBRC ALGR(PT_9)    // ]
-#define PT_RCBR ALGR(PT_0)    // }
-#define PT_DIAE ALGR(PT_PLUS) // ¨ (dead)
-#define PT_EURO ALGR(PT_E)    // €
+#include "keys_pt.h"
 
 &mt { tapping_term_ms = <200>; };
+
+//***************** default_layer
+// |  Q  |  W  |  E  |  R  |  T  |             |  Y  |  U  |  I  |  O  |  P  |
+// |  A  |  S  |  D  |  F  |  G  |             |  H  |  J  |  K  |  L  |  Ç  |
+// |  Z  |  X  |  C  |  V  |  B  |             |  N  |  M  |  ,  |  .  |  -  |
+//             | ALT |  1  |BCSPC|             |M/SPC|  2  | CTR |
+
+//***************** mov_layer
+// | ESQ |  €  |  Up |  $  | PGUP|             |PRINT| <-- | P/R | --> |  '  |
+// | TAB | LFT | Dwn | RGT |  @  |             | INS | -vl | nvl | +vl |  `  |
+// |  <  |     |     |     |PGDWN|             | DEL | HOME| END |  º  |  ~  |
+//             | ALT |  1  |BCSPC|             |M/SPC|  2  | CTR |
+
+//***************** num_layer
+// | F1/!| F2/"| F3/#| F4/$| F5/%|             | F6/&| F7 /| F8/'| F9/(|F10/)|
+// |  1  |  2  |  3  |  4  |  5  |             |  6  |  7  |  8  |  9  |  0  |
+// |  +  |  -  |  *  |  /  |  =  |             |     |  {  |  }  |  [  |  ]  |
+//             | ALT |  1  |BCSPC|             |M/SPC|  2  | CTR |
 
 / {
     keymap {
@@ -88,28 +28,28 @@
 
         default_layer {
             bindings = <
-&trans  &kp Q         &kp W  &kp E         &kp R  &kp T            &kp Y                &kp U  &kp I              &kp O    &kp P             &trans
-&trans  &kp A         &kp S  &kp D         &kp F  &kp G            &kp H                &kp J  &kp K              &kp L    &kp ENTER         &trans
-&trans  &mt LSHIFT Z  &kp X  &kp C         &kp V  &kp B            &kp N                &kp M  &kp COMMA          &kp DOT  &mt RSHIFT MINUS  &trans
+&trans  &kp Q         &kp W  &kp E         &kp R  &kp T            &kp Y                &kp U  &kp I              &kp O       &kp P               &trans
+&trans  &kp A         &kp S  &kp D         &kp F  &kp G            &kp H                &kp J  &kp K              &kp L       &kp PT_CCED         &trans
+&trans  &mt LSHIFT Z  &kp X  &kp C         &kp V  &kp B            &kp N                &kp M  &kp PT_COMM        &kp PT_DOT  &mt RSHIFT PT_MINS  &trans
                              &kp LEFT_ALT  &mo 1  &kp BACKSPACE    &mt LEFT_META SPACE  &mo 2  &kp RIGHT_CONTROL
             >;
         };
 
         mov_layer {
             bindings = <
-&trans  &kp ESCAPE                &kp AT_SIGN       &kp UP_ARROW    &kp DOLLAR       &kp PERCENT      &kp NUM_6  &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp NUM_0  &trans
-&trans  &kp BACKSLASH             &kp LEFT          &kp DOWN_ARROW  &kp RIGHT        &kp PAGE_UP      &kp MINUS  &kp EQL    &kp LBKT   &kp RBKT   &kp GRAVE  &trans
-&trans  &mt LEFT_SHIFT LESS_THAN  &kp GREATER_THAN  &kp C           &kp NON_US_HASH  &kp PAGE_DOWN    &kp MINUS  &kp GRAVE  &kp LBKT   &kp RBKT   &kp DEL    &trans
-                                                    &kp RSFT        &mo 1            &kp LGUI         &kp TAB    &mo 2      &kp RSFT
+&trans  &kp ESCAPE                &kp PT_EURO       &kp UP_ARROW    &kp PT_DLR       &kp PAGE_UP      &kp PSCRN            &kp C_PREV           &kp C_PP             &kp C_NEXT    &kp PT_QUOT         &trans
+&trans  &kp TAB                   &kp LEFT          &kp DOWN_ARROW  &kp RIGHT        &kp PT_AT        &kp INS              &kp C_VOLUME_DOWN    &kp C_MUTE           &kp C_VOL_UP  &kp PT_ACUT         &trans
+&trans  &mt LEFT_SHIFT PT_LABK    &trans            &trans          &trans           &kp PAGE_DOWN    &kp DEL              &kp HOME             &kp END              &kp PT_MORD   &mt RSHIFT PT_TILD  &trans
+                                                    &kp LEFT_ALT    &mo 1            &kp BACKSPACE    &mt LEFT_META SPACE  &mo 2                &kp RIGHT_CONTROL
             >;
         };
 
         num_layer {
             bindings = <
-&trans  &mt F1 EXCLAMATION   &mt F2 SQT    &mt F3 HASH   &mt F4 DOLLAR  &mt F5 PERCENT    &mt F6 AMPERSAND  &mt F7 SLASH  &mt F8 QUESTION  &mt F9 LEFT_PARENTHESIS  &mt F10 RIGHT_PARENTHESIS      &trans
-&trans  &kp NUMBER_1         &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5      &kp NUMBER_6      &kp N7        &kp NUMBER_8     &kp N9                   &kp N0                         &trans
-&trans  &mt LEFT_SHIFT PLUS  &kp MINUS     &kp ASTERISK  &kp SLASH      &kp EQUAL         &kp COMMA         &kp PERIOD    &kp SEMICOLON    &kp LEFT_BRACKET         &mt RIGHT_SHIFT RIGHT_BRACKET  &trans
-                                           &kp RSFT      &mo 1          &kp DELETE        &kp SPC           &mo 2         &kp RSFT
+&trans  &mt F1 PT_EXLM          &mt F2 PT_DQUO    &mt F3 PT_HASH   &mt F4 PT_DLR  &mt F5 PT_PERC    &mt F6 PT_AMPR  &mt F7 PT_SLSH  &mt F8 PT_QUES   &mt F9 PT_LPRN    &mt F10 PT_RPRN                &trans
+&trans  &kp PT_1                &kp PT_2          &kp PT_3         &kp PT_4       &kp PT_5          &kp PT_6        &kp PT_7        &kp PT_8         &kp PT_9          &kp PT_0                           &trans
+&trans  &mt LEFT_SHIFT PT_PLUS  &kp PT_MINS       &kp PT_ASTR      &kp PT_SLSH    &kp PT_EQL        &trans          &kp PT_LCBR     &kp PT_RCBR    &kp PT_LBRC       &mt RIGHT_SHIFT PT_RBRC  &trans
+                                                  &kp LEFT_ALT     &mo 1          &kp DELETE        &kp SPC         &mo 2           &kp RSFT
             >;
         };
     };
