@@ -6,14 +6,14 @@
 
 //***************** default_layer
 // |  Q  |  W  |  E  |  R  |  T  |             |  Y  |  U  |  I  |  O  |  P  |
-// |  A  |  S  |  D  |  F  |  G  |             |  H  |  J  |  K  |  L  |  Ç  |
+// |  A  |  S  |  D  |  F  |  G  |             |  H  |  J  |  K  |  L  | RET |
 // |  Z  |  X  |  C  |  V  |  B  |             |  N  |  M  |  ,  |  .  |  -  |
 //             | ALT |  1  |BCSPC|             |M/SPC|  2  | CTR |
 
 //***************** mov_layer
 // | ESQ |  €  |  Up |  $  | PGUP|             |PRINT| <-- | P/R | --> |  '  |
 // | TAB | LFT | Dwn | RGT |  @  |             | INS | -vl | nvl | +vl |  `  |
-// |  <  |     |     |     |PGDWN|             | DEL | HOME| END |  º  |  ~  |
+// |  <  |     |  Ç  |     |PGDWN|             | DEL | HOME| END |  º  |  ~  |
 //             | ALT |  1  |BCSPC|             |M/SPC|  2  | CTR |
 
 //***************** num_layer
@@ -29,7 +29,7 @@
         default_layer {
             bindings = <
 &trans  &kp Q         &kp W  &kp E         &kp R  &kp T            &kp Y                &kp U  &kp I              &kp O       &kp P               &trans
-&trans  &kp A         &kp S  &kp D         &kp F  &kp G            &kp H                &kp J  &kp K              &kp L       &kp PT_CCED         &trans
+&trans  &kp A         &kp S  &kp D         &kp F  &kp G            &kp H                &kp J  &kp K              &kp L       &kp ENTER           &trans
 &trans  &mt LSHIFT Z  &kp X  &kp C         &kp V  &kp B            &kp N                &kp M  &kp PT_COMM        &kp PT_DOT  &mt RSHIFT PT_MINS  &trans
                              &kp LEFT_ALT  &mo 1  &kp BACKSPACE    &mt LEFT_META SPACE  &mo 2  &kp RIGHT_CONTROL
             >;
@@ -38,8 +38,8 @@
         mov_layer {
             bindings = <
 &trans  &kp ESCAPE                &kp PT_EURO       &kp UP_ARROW    &kp PT_DLR       &kp PAGE_UP      &kp PSCRN            &kp C_PREV           &kp C_PP             &kp C_NEXT    &kp PT_QUOT         &trans
-&trans  &kp TAB                   &kp LEFT          &kp DOWN_ARROW  &kp RIGHT        &kp PT_AT        &kp INS              &kp C_VOL_DN    &kp C_MUTE           &kp C_VOL_UP  &kp PT_ACUT         &trans
-&trans  &mt LEFT_SHIFT PT_LABK    &trans            &trans          &trans           &kp PAGE_DOWN    &kp DEL              &kp HOME             &kp END              &kp PT_MORD   &mt RSHIFT PT_TILD  &trans
+&trans  &kp TAB                   &kp LEFT          &kp DOWN_ARROW  &kp RIGHT        &kp PT_AT        &kp INS              &kp C_VOL_DN         &kp C_MUTE           &kp C_VOL_UP  &kp PT_ACUT         &trans
+&trans  &mt LEFT_SHIFT PT_LABK    &trans            &kp PT_CCED     &trans           &kp PAGE_DOWN    &kp DEL              &kp HOME             &kp END              &kp PT_MORD   &mt RSHIFT PT_TILD  &trans
                                                     &kp LEFT_ALT    &mo 1            &kp BACKSPACE    &mt LEFT_META SPACE  &mo 2                &kp RIGHT_CONTROL
             >;
         };
