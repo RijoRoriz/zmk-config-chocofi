@@ -2,25 +2,25 @@
 #include <dt-bindings/zmk/keys.h>
 #include "keys_pt.h"
 
-&mt { tapping_term_ms = <200>; };
+&mt { tapping_term_ms = <400>; };
 
 //***************** default_layer
 // |  Q  |  W  |  E  |  R  |  T  |             |  Y  |  U  |  I  |  O  |  P  |
 // |  A  |  S  |  D  |  F  |  G  |             |  H  |  J  |  K  |  L  | RET |
 // |  Z  |  X  |  C  |  V  |  B  |             |  N  |  M  |  ,  |  .  |  -  |
-//             | ALT |  1  |BCSPC|             |M/SPC|  2  | CTR |
+//             | ALT |BCSPC|  1  |             |  2  |M/SPC| ALT |
 
 //***************** mov_layer
 // | ESQ |  €  |  Up |  $  | PGUP|             |PRINT| <-- | P/R | --> |  '  |
 // | TAB | LFT | Dwn | RGT |  @  |             | INS | -vl | nvl | +vl |  `  |
 // |  <  |     |  Ç  |     |PGDWN|             | DEL | HOME| END |  º  |  ~  |
-//             | ALT |  1  |BCSPC|             |M/SPC|  2  | CTR |
+//             | ALT |BCSPC|  1  |             |  2  |M/SPC| ALT |
 
 //***************** num_layer
 // | F1/!| F2/"| F3/#| F4/$| F5/%|             | F6/&| F7 /| F8/'| F9/(|F10/)|
 // |  1  |  2  |  3  |  4  |  5  |             |  6  |  7  |  8  |  9  |  0  |
 // |  +  |  -  |  *  |  /  |  =  |             |     |  {  |  }  |  [  |  ]  |
-//             | ALT |  1  |BCSPC|             |M/SPC|  2  | CTR |
+//             | ALT |BCSPC|  1  |             |  2  |M/SPC| ALT |
 
 / {
     keymap {
@@ -54,3 +54,4 @@
         };
     };
 };
+&
