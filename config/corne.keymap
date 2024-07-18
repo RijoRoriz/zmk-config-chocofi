@@ -31,7 +31,7 @@
 &trans  &kp Q                       &kp W           &kp E               &kp R                    &kp T           &kp Y           &kp U                   &kp I               &kp O            &kp P                            &trans
 &trans  &mt LEFT_SHIFT A            &kp S           &kp D               &kp F                    &kp G           &kp H           &kp J                   &kp K               &kp L            &mt RIGHT_SHIFT   BACKSPACE      &trans
 &trans  &mt LEFT_CONTROL Z          &kp X           &kp C               &kp V                    &kp B           &kp N           &kp M                   &kp PT_COMM         &kp PT_DOT       &mt RIGHT_CONTROL ENTER          &trans
-                                                    &kp LEFT_ALT        &kp LEFT_META            &mo 1           &mo 2           &kp SPACE               &kp RIGHT_ALT    
+                                                    &kp LEFT_META       &kp LEFT_ALT             &mo 1           &mo 2           &mt RIGHT_ALT SPACE     &kp LEFT_META    
             >;
         };
 
@@ -40,7 +40,7 @@
 &trans  &kp ESCAPE                  &kp PT_LPRN     &kp UP_ARROW        &kp PT_RPRN              &kp PAGE_UP     &kp PSCRN       &kp C_PREV              &kp C_PP            &kp C_NEXT       &kp PT_QUOT                    &trans
 &trans  &mt LEFT_SHIFT TAB          &kp LEFT        &kp DOWN_ARROW      &kp RIGHT                &kp DEL         &kp DEL         &kp C_VOL_DN            &kp C_MUTE          &kp C_VOL_UP     &mt RIGHT_SHIFT PT_ACUT        &trans
 &trans  &mt LEFT_CONTROL BACKSLASH  &kp RA(PT_8)    &kp PT_CCED         &kp RA(PT_9)             &kp PAGE_DOWN   &kp INS         &kp HOME                &kp END             &kp PT_MORD      &mt RIGHT_CONTROL PT_TILD      &trans
-                                                    &kp LEFT_ALT        &kp LEFT_META            &mo 1           &mo 2           &kp SPACE               &kp RIGHT_ALT    
+                                                    &kp LEFT_META       &kp LEFT_ALT             &mo 1           &mo 2           &mt RIGHT_ALT SPACE     &kp LEFT_META    
             >;
         };
 
@@ -49,7 +49,7 @@
 &trans  &kp PT_1                    &kp PT_2        &kp PT_3            &kp PT_4                 &kp PT_5        &kp PT_6        &kp PT_7                &kp PT_8            &kp PT_9          &kp PT_0                         &trans
 &trans  &mt LEFT_SHIFT F1           &kp F2          &kp F3              &kp F4                   &kp F5          &kp F6          &kp F7                  &kp F8              &kp F9            &mt RIGHT_SHIFT F10              &trans
 &trans  &mt LEFT_CONTROL PT_PLUS    &kp PT_MINS     &kp PT_ASTR         &kp PT_SLSH              &kp PT_EQL      &kp F11         &kp F12                 &kp PT_LDAQ         &kp PT_LCBR       &mt RIGHT_CONTROL PT_RCBR        &trans
-                                                    &kp LEFT_ALT        &kp LEFT_META            &mo 1           &mo 2           &kp SPACE               &kp RIGHT_ALT
+                                                    &kp LEFT_META       &kp LEFT_ALT             &mo 1           &mo 2           &mt RIGHT_ALT SPACE     &kp LEFT_METAttq
             >;
         };
     };
