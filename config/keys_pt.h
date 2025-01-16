@@ -53,16 +53,18 @@
 #define PT_COMM COMMA        // ,
 #define PT_DOT DOT           // .
 #define PT_MINS SLASH        // -
-#define PT_PIPE LS(PT_BSLS)  // |
-#define PT_EXLM RS(PT_1)     // !
-#define PT_DQUO LS(PT_2)     // "
-#define PT_HASH LS(PT_3)     // #
-#define PT_DLR RS(PT_4)      // $
-#define PT_PERC RS(PT_5)     // %
-#define PT_AMPR RS(PT_6)     // &
-#define PT_SLSH RS(PT_7)     // /
-#define PT_LPRN RS(PT_8)     // (
-#define PT_RPRN RS(PT_9)     // )
+
+/*
+#define PT_PIPE RS(GRV)      // |
+#define PT_EXLM RS(N1)     // !
+#define PT_DQUO RS(N2)     // "
+#define PT_HASH RS(N3)     // #
+#define PT_DLR RS(N4)      // $
+#define PT_PERC RS(N5)     // %
+#define PT_AMPR RS(N6)     // &
+#define PT_SLSH RS(N7)     // /
+#define PT_LPRN RS(N8)     // (
+#define PT_RPRN RS(N9)     // )
 #define PT_EQL RS(PT_0)      // =:
 #define PT_QUES RS(PT_QUOT)  // ?
 #define PT_RDAQ RS(PT_LDAQ)  // »
@@ -83,3 +85,35 @@
 #define PT_RCBR RA(PT_0)     // }
 #define PT_DIAE RA(PT_PLUS)  // ¨ (dead)
 #define PT_EURO RA(PT_E)     // €
+*/
+
+#define PT_PIPE (ZMK_MOD_RS | GRV)      // |
+#define PT_EXLM (ZMK_MOD_RS | N1)      // !
+#define PT_DQUO (ZMK_MOD_LS | N2)      // "
+#define PT_HASH (ZMK_MOD_LS | N3)      // #
+#define PT_DLR (ZMK_MOD_RS | N4)       // $
+#define PT_PERC (ZMK_MOD_RS | N5)      // %
+#define PT_AMPR (ZMK_MOD_RS | N6)      // &
+#define PT_SLSH (ZMK_MOD_RS | N7)      // /
+#define PT_LPRN (ZMK_MOD_RS | N8)      // (
+#define PT_RPRN (ZMK_MOD_RS | N9)      // )
+#define PT_EQL (ZMK_MOD_RS | N0)       // =
+#define PT_QUES (ZMK_MOD_RS | MINUS)   // ?
+#define PT_RDAQ (ZMK_MOD_RS | EQUAL)   // »
+#define PT_ASTR (ZMK_MOD_RS | LBRC)    // *
+#define PT_GRV (ZMK_MOD_RS | RBRC)     // ` (dead)
+#define PT_FORD (ZMK_MOD_RS | SQT)     // ª
+#define PT_CIRC (ZMK_MOD_RS | NUHS)    // ^ (dead)
+#define PT_RABK (ZMK_MOD_RS | NUBS)    // >
+#define PT_SCLN (ZMK_MOD_RS | COMMA)   // ;
+#define PT_COLN (ZMK_MOD_RS | DOT)     // :
+#define PT_UNDS (ZMK_MOD_RS | SLASH)   // _
+#define PT_AT (ZMK_MOD_RALT | N2)      // @
+#define PT_PND (ZMK_MOD_RALT | N3)     // £
+#define PT_SECT (ZMK_MOD_RALT | N4)    // §
+#define PT_LCBR (ZMK_MOD_RALT | N7)    // {
+#define PT_LBRC (ZMK_MOD_RALT | N8)    // [
+#define PT_RBRC (ZMK_MOD_RALT | N9)    // ]
+#define PT_RCBR (ZMK_MOD_RALT | N0)    // }
+#define PT_DIAE (ZMK_MOD_RALT | LBRC)  // ¨ (dead)
+#define PT_EURO (ZMK_MOD_RALT | E)     // €
