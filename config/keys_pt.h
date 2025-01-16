@@ -53,10 +53,10 @@
 #define PT_COMM COMMA        // ,
 #define PT_DOT DOT           // .
 #define PT_MINS SLASH        // -
-#define PT_PIPE RS(PT_BSLS)  // |
+#define PT_PIPE LS(PT_BSLS)  // |
 #define PT_EXLM RS(PT_1)     // !
-#define PT_DQUO RS(PT_2)     // "
-#define PT_HASH RS(PT_3)     // #
+#define PT_DQUO LS(PT_2)     // "
+#define PT_HASH LS(PT_3)     // #
 #define PT_DLR RS(PT_4)      // $
 #define PT_PERC RS(PT_5)     // %
 #define PT_AMPR RS(PT_6)     // &
