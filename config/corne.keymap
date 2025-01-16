@@ -145,7 +145,7 @@
         // Symb layer
         symb_layer {
             bindings = <
-&trans  &kp ESCAPE              &kp RS(N2)                  &kp PT_HASH             &kp PT_DLR              &kp PT_PERC        &kp PT_AMPR        &kp PT_BSLS                   &kp PT_LABK             &kp PT_RABK                 &kp PT_EQL                  &trans
+&trans  &kp ESCAPE              &kp PT_DQUO                 &kp PT_HASH             &kp PT_DLR              &kp PT_PERC        &kp PT_AMPR        &kp PT_BSLS                   &kp PT_LABK             &kp PT_RABK                 &kp PT_EQL                  &trans
 &trans  &mt LEFT_SHIFT TAB      &mt LEFT_CONTROL PT_AT      &mt LEFT_META PT_PND    &mt LEFT_ALT PT_SECT    &trans             &trans             &mt RIGHT_ALT PT_PIPE         &trans                  &trans                      &trans                      &trans
 &trans  &trans                  &trans                      &kp PT_CCED             &trans                  &trans             &trans             &kp PT_SLSH                   &trans                  &kp PT_FORD                 &kp PT_TILD                 &trans
                                                             &mo 4                   &mo 1                   &kp DEL            &kp ENTER          &mo 2                         &mo 3
@@ -166,10 +166,10 @@
         // Extra layer
         extra_layer {
             bindings = <
-&trans  &trans                  &kp UP                      &trans                  &kp PGUP               &trans             &kp PRINT_SCREEN          &kp C_PREV              &kp C_PLAY_PAUSE        &kp C_NEXT                  &trans                      &trans
-&trans  &kp LEFT                &kp DOWN                    &kp RIGHT               &trans                 &trans             &trans                    &kp VOLD                &kp MUTE                &kp VOLU                    &trans                      &trans
-&trans  &trans                  &trans                      &trans                  &kp PGDOWN             &trans             &kp INS                   &kp HOME                &kp END                 &trans                      &trans                      &trans
-                                                            &mo 4                   &mo 1                  &kp DEL            &kp ENTER                 &mo 2                  &mo 3
+&trans  &trans                  &kp UP                      &trans                  &kp PAGE_UP            &trans             &kp PRINTSCREEN           &kp C_PREV              &kp C_PLAY_PAUSE        &kp C_NEXT                  &trans                      &trans
+&trans  &kp LEFT                &kp DOWN                    &kp RIGHT               &trans                 &trans             &trans                    &kp C_VOL_UP            &kp C_MUTE              &kp C_VOL_DN                &trans                      &trans
+&trans  &trans                  &trans                      &trans                  &kp PAGE_DOWN          &trans             &kp INS                   &kp HOME                &kp END                 &trans                      &trans                      &trans
+                                                            &mo 4                   &mo 1                  &kp DEL            &kp ENTER                 &mo 2                   &mo 3
             >;
            };
     };
