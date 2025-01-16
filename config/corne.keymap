@@ -167,7 +167,7 @@
         // Extra layer
         extra_layer {
             bindings = <
-&trans  &bt BT_CLR_ALL          &trans                      &kp UP                  &trans                 &kp PAGE_UP        &kp PRINTSCREEN           &kp C_PREV              &kp C_PLAY_PAUSE        &kp C_NEXT                  &bt BT_NXT                  &trans
+&trans  &trans          &trans                      &kp UP                  &trans                 &kp PAGE_UP        &kp PRINTSCREEN           &kp C_PREV              &kp C_PLAY_PAUSE        &kp C_NEXT                  &bt BT_NXT                  &trans
 &trans  &trans                  &kp LEFT                    &kp DOWN                &kp RIGHT              &trans             &trans                    &kp C_VOL_UP            &kp C_MUTE              &kp C_VOL_DN                &trans                      &trans
 &trans  &trans                  &trans                      &trans                  &trans                 &kp PAGE_DOWN      &kp INS                   &kp HOME                &kp END                 &trans                      &trans                      &trans
                                                             &mo 4                   &mo 1                  &kp DEL            &kp ENTER                 &mo 2                   &mo 3
