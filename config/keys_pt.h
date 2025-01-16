@@ -5,7 +5,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/modifiers.h>
 
-#define PT_BSLS GRV          // (backslash)
+#define PT_BSLS GRAVE          // (backslash)
 #define PT_1 N1              // 1
 #define PT_2 N2              // 2
 #define PT_3 N3              // 3
