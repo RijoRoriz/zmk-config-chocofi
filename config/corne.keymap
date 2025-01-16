@@ -2,6 +2,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include "keys_pt.h"
 
+#define LS(k) (ZMK_MOD_LS | (k)) // Left Shift modifier
+#define RS(k) (ZMK_MOD_RS | (k)) // Right Shift modifier
+#define RA(k) (ZMK_MOD_RALT | (k)) // Right Alt (AltGr) modifier
+
 &mt { tapping_term_ms = <400>; };
 
 //***************** default_layer
@@ -61,8 +65,7 @@
         // Symb layer
         symb_layer {
             bindings = <
-//&trans  &kp ESC                 &kp PT_DQUO                 &kp PT_HASH             &kp PT_DLR              &kp PT_PERC        &kp PT_AMPR        &kp PT_BSLS                   &kp PT_LABK             &kp PT_RABK                 &kp PT_EQL                  &trans
-&trans  &kp F1                  &kp F2                      &kp F3                  &kp F4                  &kp F5             &kp F6              &kp F7                       &kp F8                  &kp F9                      &kp F10                     &trans
+&trans  &kp ESC                 &kp PT_DQUO                 &kp PT_HASH             &kp PT_DLR              &kp PT_PERC        &kp PT_AMPR        &kp PT_BSLS                   &kp PT_LABK             &kp PT_RABK                 &kp PT_EQL                  &trans
 &trans  &mt LEFT_SHIFT TAB      &mt LEFT_CONTROL PT_AT      &mt LEFT_META PT_PND    &mt LEFT_ALT PT_SECT    &trans             &trans             &mt RIGHT_ALT PT_PIPE         &trans                  &trans                      &trans                      &trans
 &trans  &trans                  &trans                      &kp PT_CCED             &trans                  &trans             &trans             &kp PT_SLSH                   &trans                  &kp PT_FORD                 &kp PT_TILD                 &trans
                                                             &mo 4                   &mo 1                   &kp DEL            &kp ENTER          &mo 2                         &mo 3
