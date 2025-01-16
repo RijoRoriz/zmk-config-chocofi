@@ -87,7 +87,7 @@
 #define PT_EURO RA(PT_E)     // €
 */
 
-#define PT_PIPE (ZMK_MOD_RS | GRV)      // |
+#define PT_PIPE (ZMK_MOD_RS | GRAVE)      // |
 #define PT_EXLM (ZMK_MOD_RS | N1)      // !
 #define PT_DQUO (ZMK_MOD_LS | N2)      // "
 #define PT_HASH (ZMK_MOD_LS | N3)      // #
