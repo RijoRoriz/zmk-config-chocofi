@@ -128,7 +128,7 @@
         num_layer {
             bindings = <
 &trans  &kp LS(NUMBER_1)         &kp LS(NUMBER_2)           &kp LS(NUMBER_3)        &kp LS(NUMBER_4)       &kp LS(NUMBER_5)    &kp LS(NUMBER_6)  &kp RS(NUMBER_7)        &kp LS(NUMBER_8)        &kp LS(NUMBER_9)            &kp LS(NUMBER_0)          &trans
-&trans  &mt NUMBER_1 LEFT_SHIFT  &mt NUMBER_2 LEFT_CONTROL  &mt LEFT_META NUMBER_3  &mt LEFT_ALT NUMBER_4  &kp NUMBER_5        &kp NUMBER_6      &mt RIGHT_ALT NUMBER_7  &mt LEFT_META NUMBER_8  &mt RIGHT_CONTROL NUMBER_9  &mt RIGHT_SHIFT NUMBER_0  &trans
+&trans  &mt LEFT_SHIFT NUMBER_1  &mt LEFT_CONTROL NUMBER_2  &mt LEFT_META NUMBER_3  &mt LEFT_ALT NUMBER_4  &kp NUMBER_5        &kp NUMBER_6      &mt RIGHT_ALT NUMBER_7  &mt LEFT_META NUMBER_8  &mt RIGHT_CONTROL NUMBER_9  &mt RIGHT_SHIFT NUMBER_0  &trans
 &trans  &none                    &kp LA(NUMBER_2)           &kp LA(NUMBER_3)        &kp LA(NUMBER_4)       &none               &none             &kp RA(NUMBER_7)        &kp RA(NUMBER_8)        &kp RA(NUMBER_9)            &kp RA(NUMBER_0)          &trans
                                                             &trans                  &trans                 &trans              &trans            &trans                  &trans
             >;
