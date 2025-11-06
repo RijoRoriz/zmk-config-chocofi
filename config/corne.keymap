@@ -138,7 +138,7 @@
             bindings = <
 &trans  &kp ESCAPE            &none                       &none                       &none                      &none               &kp MINUS         &kp RS(MINUS)                 &kp EQUAL            &kp LA(EQUAL)                      &kp BACKSPACE          &trans
 &trans  &mt LEFT_SHIFT GRAVE  &mt LEFT_CONTROL LS(GRAVE)  &mt LEFT_META LS(NUMBER_3)  &mt LEFT_ALT LS(NUMBER_4)  &kp LS(NUMBER_5)    &kp LEFT_BRACE    &mt RIGHT_ALT RS(LEFT_BRACE)  &mt RIGHT_META RBRC  &mt RIGHT_CONTROL RS(RIGHT_BRACE)  &mt RIGHT_SHIFT ENTER  &trans
-&trans  &kp TAB               &kp LS(NUBS)                &kp NUBS                    &kp LS(NUBS)               &none               &kp SINGLE_QUOTE  &kp RS(SINGLE_QUOTE)          &kp NON_US_HASH      &kp RS(NON_US_HASH)                &none                  &trans
+&trans  &kp TAB               &kp LS(NUBS)                &kp NUBS                    &kp LS(NUBS)               &none               &kp SINGLE_QUOTE  &kp RS(SINGLE_QUOTE)          &kp NON_US_HASH      &kp RS(NON_US_HASH)                &kp DEL                &trans
                                                           &trans                      &trans                     &trans              &trans            &trans                        &trans
             >;
         };
